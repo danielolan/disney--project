@@ -1,7 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
-    height: 100vh;
-    width: 100vw;
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://disney.images.edge.bamgrid.com/ripcut-delivery/v1/variant/disney/C9E09EB127322DE16A41800B80B9F1DF134E31F3C81C1F2DD34DE33690CA67F8/scale?format=webp&quality=90");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* {
+  font-family: "Avenir", sans-serif;
 }

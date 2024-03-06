@@ -6,7 +6,7 @@ import Login from "./pages/LoginPage";
 import Home from "./pages/HomePage";
 import ContentDetails from "./pages/ContentDetailsPage";
 
-const auth = false;
+const auth = true;
 const App: React.FC = () => {
   return (
     <BrowserRouter>

@@ -13,7 +13,10 @@ interface HomeState {
 }
 
 const initialState: HomeState = {
-  categories: []
+  categories: [
+
+
+  ]
 };
 
 const categorySlice = createSlice({
@@ -26,6 +29,7 @@ const categorySlice = createSlice({
     },
     
     addCategory(state, action: PayloadAction<Category>) {
+      state.categories=[]
       state.categories.push(action.payload);
     },
     

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Mandalorian",
+        "thumbnail": "",
+        "movies": []
+    },
+    {
+        "id": 2,
+        "name": "IRON MAN",
+        "thumbnail": "",
+        "movies": []
+    },
+    {
+        "id": 3,
+        "name": "CATEGORIAS",
+        "humbnail": "",
+        "movies": []
+    }
+]
