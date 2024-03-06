@@ -1,22 +1,21 @@
 // CategoryCard.tsx
 
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 interface CategoryCardProps {
   title: string;
-   // Pass icon components like from react-icons
-  onClick: () => void;
+  to: string;
 }
 
-const CategoryCard: React.FC<CategoryCardProps> = ({ title,  onClick }) => {
+const CategoryCard: React.FC<CategoryCardProps> = ({ title, to }) => {
   return (
-    <div
-      className="flex items-center space-x-4 bg-gray-100 p-4 rounded-lg cursor-pointer hover:bg-gray-200"
-      onClick={onClick}
+    <Link
+      className="flex items-center justify-center m-2 border bg-transparent p-4 rounded-lg cursor-pointer hover:bg-[#050423] w-[220px] h-[140px]"
+      to={to}
     >
-      
-      <div className="font-medium">{title}</div>
-    </div>
+      <div className="font-extrabold text-white">{title}</div>
+    </Link>
   );
 };
 

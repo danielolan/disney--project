@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router-dom";
+import { MainLayout } from "../components/layouts/MainLayout";
 
-const ContentDetails = () => {
-  return (
-    <div>
-      content detail aaaa
-    </div>
-  )
-}
+const ContentDetailsPage = () => {
+  const { categoryId } = useParams();
+  return <MainLayout><>content detail aaaa {categoryId}</></MainLayout>;
+};
 
-export default ContentDetails
+export default ContentDetailsPage;
