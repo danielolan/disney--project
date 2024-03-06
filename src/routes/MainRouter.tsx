@@ -1,21 +1,35 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { PublicRoute } from "./PublicRoute";
-import LoginPage from "../pages/LoginPage.1";
+
 import Home from "../pages/HomePage";
 import { PrivateRoute } from "./PrivateRoute";
 import HomePage from "../pages/HomePage";
 import ContentDetailsPage from "../pages/ContentDetailsPage";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+import { useEffect, useState } from "react";
+import LoginPage from "../pages/LoginPage";
 
-const auth = false;
+
 
 export const MainRouter = () => {
+  const {  user } = useSelector((state: RootState) => state.auth);
+  const [isAuth, setIsAuth] = useState(!!user);
+  useEffect(() => {
+    if (user) {
+      setIsAuth(true);
+    } else {
+      setIsAuth(false);
+    }
+  }, [user]);
+
   return (
     <BrowserRouter>
       <Routes>
         <Route
           path="/login"
           element={
-            <PublicRoute auth={auth}>
+            <PublicRoute auth={isAuth}>
               <LoginPage />
             </PublicRoute>
           }
@@ -23,7 +37,7 @@ export const MainRouter = () => {
         <Route
           path="/home"
           element={
-            <PrivateRoute auth={auth}>
+            <PrivateRoute auth={isAuth}>
               <HomePage />
             </PrivateRoute>
           }
@@ -31,7 +45,7 @@ export const MainRouter = () => {
         <Route
           path="/"
           element={
-            <PrivateRoute auth={auth}>
+            <PrivateRoute auth={isAuth}>
               <Home />
             </PrivateRoute>
           }
@@ -40,7 +54,7 @@ export const MainRouter = () => {
         <Route
           path="/category/:categoryId"
           element={
-            <PrivateRoute auth={auth}>
+            <PrivateRoute auth={isAuth}>
               <ContentDetailsPage />
             </PrivateRoute>
           }
@@ -48,7 +62,7 @@ export const MainRouter = () => {
         <Route
           path="/details"
           element={
-            <PrivateRoute auth={auth}>
+            <PrivateRoute auth={isAuth}>
               <ContentDetailsPage />
             </PrivateRoute>
           }

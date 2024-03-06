@@ -16,11 +16,11 @@ const initialState: AuthState = {
   loginError: null,
 };
 
-const mockUser = {
-  email: "ola@no.com",
+export const mockUser = {
+  email: "da-olano@hotmail.com",
   name: "Daniel",
   id: "84h2uy4n43",
-  password: "mipass123",
+  password: "123456",
 };
 
 const authSlice = createSlice({
@@ -53,10 +53,8 @@ const authSlice = createSlice({
       state.loginError = null;
     },
 
-    updateUser(state, action: PayloadAction<User>) {
-      if (state.isLoggedIn && state.user) {
-        state.user = { ...state.user, ...action.payload };
-      }
+    updateUser(state, action: PayloadAction<UserForm>) {
+      state.user= action.payload
     },
   },
 });
