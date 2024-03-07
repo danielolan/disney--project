@@ -21,4 +21,5 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ thumbnail, to }) => {
   );
 };
 
+
 export default CategoryCard;

@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import LoginPage from "../pages/LoginPage";
 import ContentCategoryPage from "../pages/ContentCategoryPage";
 import ContentDetailsPage from "../pages/ContentDetailsPage";
+import ContactPage from "../pages/ContactPage";
 
 export const MainRouter = () => {
   const { user } = useSelector((state: RootState) => state.auth);
@@ -49,6 +50,14 @@ export const MainRouter = () => {
           element={
             <PrivateRoute auth={isAuth}>
               <HomePage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <PrivateRoute auth={isAuth}>
+              <ContactPage />
             </PrivateRoute>
           }
         />

@@ -5,24 +5,14 @@ import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 
 const ContentDetailsPage = () => {
-  const { movieId, categoryId } = useParams<{
-    movieId: string;
-    categoryId: string;
-  }>();
-  const { categories, isError, isLoading } = useSelector(
-    (state: RootState) => state.categories
-  );
-  const [movies, setMovie] = useState(null); // Estado para almacenar la película
+  const { movieId, categoryId } = useParams<{ movieId: string; categoryId: string; }>();
+  const { categories, isError, isLoading } = useSelector((state: RootState) => state.categories);
+  const [movies, setMovie] = useState(null);
 
   useEffect(() => {
-    // Encuentra la categoría por ID
     const categoria = categories.find((c) => c.id.toString() === categoryId);
-
-    // Si la categoría existe, busca la película por ID
     if (categoria) {
       const movie = categoria.movies.find((m) => m.id.toString() === movieId);
-
-      // Si la película existe, actualiza el estado
       if (movie) {
         setMovie(movie);
       }
@@ -31,25 +21,30 @@ const ContentDetailsPage = () => {
 
   return (
     <MainLayout>
-      <div className="bg-transparent">
+      <div className="opacity-100 min-h-screen text-white justify-center">
         {movies ? (
-          <div className="justify-center">
-            <h1 className="text-2xl font-bold">{movies.name}</h1>
-            <p className="text-md">{movies.subtitle}</p>
-            {/*<img className="w-full" src={movies.url} alt={movies.name} />*/}
-            <p className="text-sm">{movies.description}</p>
-            <div className="text-sm">
-              <span>Duración: {movies.duration}</span> |{" "}
-              <span>Edad: {movies.age}</span> |{" "}
-              <span>Autor: {movies.autor}</span>
+          <div className="flex flex-col items-center px-4 py-10">
+            <h1 className="text-4xl font-bold mb-4">{movies.name}</h1>
+            <iframe
+              className="w-full md:w-3/4 aspect-video mb-4"
+              src={movies.video}
+              title={movies.name}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg max-w-3xl w-full">
+              <p className="text-lg">{movies.subtitle}</p>
+              <p className="text-md my-2">{movies.description}</p>
+              <div className="text-sm mb-4">
+                <span>Duración: {movies.duration}</span> |{" "}
+                <span>Edad: {movies.age}</span> |{" "}
+                <span>Autor: {movies.autor}</span>
+              </div>
+             
             </div>
-            <button className="bg-white text-black px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black">
-              <span className="material-icons">play_arrow</span>
-              <span>VER AHORA</span>
-            </button>
           </div>
         ) : (
-          <div>Película no encontrada</div>
+          <div className="text-center py-10">Película no encontrada</div>
         )}
       </div>
     </MainLayout>
