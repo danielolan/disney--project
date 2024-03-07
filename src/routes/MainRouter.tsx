@@ -54,10 +54,10 @@ export const MainRouter = () => {
         />
 
         <Route
-          path="/details"
+          path="/details/:categoryId/:movieId"
           element={
             <PrivateRoute auth={isAuth}>
-             <>golas jas </>
+             <ContentDetailsPage/>
             </PrivateRoute>
           }
         />
