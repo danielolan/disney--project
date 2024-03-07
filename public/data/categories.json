@@ -2,13 +2,14 @@
     {
         "id": 1,
         "name": "PIXAR",
-        "thumbnail": "",
+        "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7F4E1A299763030A0A8527227AD2812C049CE3E02822F7EDEFCFA1CFB703DDA5/scale?width=400&aspectRatio=1.78&format=png",
         "movies": [
             {
                 "id": "1",
                 "name": "Toy Story",
                 "subtitle": "Amistad más allá de la habitación",
                 "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8F161B52338EE723D8F1C5DA31740A434E4A85F8749F9E2B9984309C287B90CF/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "",
                 "description": "La historia de un grupo de juguetes que cobran vida cuando los humanos no están presentes, centrada en Woody y Buzz Lightyear.",
                 "duration": "81 min",
                 "age": "Todos los públicos",
@@ -20,6 +21,7 @@
                 "name": "Buscando a Nemo",
                 "subtitle": "Una aventura oceánica inolvidable",
                 "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7C5CD762D93B01CA6768FB8D29BCE1048EBC7F1F0FE417F4AAC37C60271EF88C/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "",
                 "description": "La emocionante travesía de Marlin, un pez payaso, para encontrar a su hijo Nemo.",
                 "duration": "100 min",
                 "age": "Todos los públicos",
@@ -31,6 +33,7 @@
                 "name": "WALL-E",
                 "subtitle": "Un pequeño robot con un gran corazón",
                 "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5C8D13FFDEA93C10069A51DDA07050A362726ADCA060AACEE5DACB61CD3F7891/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "",
                 "description": "WALL-E, un robot encargado de limpiar la Tierra abandonada, se embarca en un viaje que cambiará el destino de la humanidad.",
                 "duration": "98 min",
                 "age": "Todos los públicos",
@@ -42,6 +45,7 @@
                 "name": "Intensa-Mente",
                 "subtitle": "Un viaje por las emociones humanas",
                 "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/42E9C72D02EA708D86845F47949CC7F9E4398E0A82D1584FB08D324EAFBFBE6E/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "",
                 "description": "La historia de Riley, una niña guiada por sus emociones - Alegría, Miedo, Ira, Asco y Tristeza - y cómo manejan su vida.",
                 "duration": "95 min",
                 "age": "Todos los públicos",
@@ -53,6 +57,7 @@
                 "name": "Coco",
                 "subtitle": "Descubriendo la magia de la tradición",
                 "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/29BC1A4A2B4F848373C1242ABB3BCDEEC9DF513D56A44EF24A47192AEC578698/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "",
                 "description": "Miguel, un joven con sueños de convertirse en músico, se embarca en una extraordinaria aventura en la Tierra de los Muertos.",
                 "duration": "105 min",
                 "age": "Todos los públicos",
@@ -64,7 +69,7 @@
     {
         "id": 2,
         "name": "DISNEY",
-        "thumbnail": "",
+        "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=400&aspectRatio=1.78&format=png",
         "movies": []
     },
     {

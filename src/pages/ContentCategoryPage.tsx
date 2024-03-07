@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { MainLayout } from "../components/layouts/MainLayout";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
-import { Movies } from "../interfaces";
+import { Category, Movies } from "../interfaces";
 
 const ContentCategoryPage = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
@@ -11,12 +11,14 @@ const ContentCategoryPage = () => {
   const { categories, isError, isLoading } = useSelector(
     (state: RootState) => state.categories
   );
+  const [category,setCategory] = useState<Category>()
 
   useEffect(() => {
     // Si categories es un arreglo de Category y cada Category tiene un arreglo de Movies
-    const category = categories.find((category) => category.id.toString() === categoryId);
-    if (category) {
-      setActualMovies(category.movies);
+    const categoryTemp = categories.find((category) => category.id.toString() === categoryId);
+    if (categoryTemp) {
+      setCategory(categoryTemp)
+      setActualMovies(categoryTemp!.movies);
     }
   }, [categories, categoryId]);
 
@@ -30,8 +32,7 @@ const ContentCategoryPage = () => {
 
   return (
     <MainLayout>
-      <h1 className="text-center text-4xl md:text-6xl font-bold tracking-wide my-8" style={{ fontFamily: 'Your Pixar-like font here' }}>PIXAR</h1>
-
+      <img className="w-[200px]" src={category?.thumbnail}  />
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {actualMovies.length > 0 ? (
           actualMovies.map((movie) => (

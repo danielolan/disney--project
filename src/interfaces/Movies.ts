@@ -3,6 +3,7 @@ export interface Movies {
   name: string;
   subtitle: string;
   url: string;
+  video: string;
   description: string;
   duration: string;
   age: string;
