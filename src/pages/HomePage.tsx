@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import NavBar from "../components/shared/NavBar";
+
 import ImageDisplay from "../components/ImageDisplay";
 import CategoryCard from "../components/CategoryCard";
 import { useDispatch, useSelector } from "react-redux";
@@ -33,10 +33,10 @@ const HomePage = () => {
   return (
     <MainLayout>
       <ImageDisplay />
-      <div className="flex flex-wrap p-4">
+      <div className="flex flex-wrap justify-center mx-auto p-4 ">
         {categories?.map((category, i) => (
           <CategoryCard
-            title={category.name}
+            thumbnail={category.thumbnail}
             to={`/category/${category.id}`}
             key={i}
           />

@@ -35,19 +35,20 @@ const ContentCategoryPage = () => {
   return (
     <MainLayout>
       <img className="w-[200px]" src={category?.thumbnail} />
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 ">
         {actualMovies.length > 0 ? (
           actualMovies.map((movie) => (
             <Link
-              key={movie.id}
-              className="max-w-sm rounded overflow-hidden shadow-lg"
-              to={`/details/${category?.id}/${movie.id}`}
-            >
-              <img className="w-full" src={movie.url} alt={movie.name} />
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{movie.name}</div>
-              </div>
-            </Link>
+            key={movie.id}
+            className="max-w-sm rounded overflow-hidden shadow-lg hover:border hover:border-white transform hover:scale-105 transition duration-300 justify-center"
+            to={`/details/${category?.id}/${movie.id}`}
+          >
+            <img className="w-full" src={movie.url} alt={movie.name} />
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">{movie.name}</div>
+            </div>
+          </Link>
+          
           ))
         ) : (
           <div className="text-center">No movies available</div>
