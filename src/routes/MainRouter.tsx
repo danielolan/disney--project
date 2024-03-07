@@ -12,11 +12,8 @@ import LoginPage from "../pages/LoginPage";
 import ContentCategoryPage from "../pages/ContentCategoryPage";
 import ContentDetailsPage from "../pages/ContentDetailsPage";
 
-
-
-
 export const MainRouter = () => {
-  const {  user } = useSelector((state: RootState) => state.auth);
+  const { user } = useSelector((state: RootState) => state.auth);
   const [isAuth, setIsAuth] = useState(!!user);
   useEffect(() => {
     if (user) {
@@ -29,6 +26,16 @@ export const MainRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route
+          path="/"
+          index
+          element={
+            <PrivateRoute auth={isAuth}>
+              <Home />
+            </PrivateRoute>
+          }
+        />
+
         <Route
           path="/login"
           element={
@@ -45,11 +52,12 @@ export const MainRouter = () => {
             </PrivateRoute>
           }
         />
+
         <Route
-          path="/"
+          path="/details"
           element={
             <PrivateRoute auth={isAuth}>
-              <Home />
+             <>golas jas </>
             </PrivateRoute>
           }
         />
@@ -62,15 +70,7 @@ export const MainRouter = () => {
             </PrivateRoute>
           }
         />
-        <Route
-          path="/details"
-          element={
-            <PrivateRoute auth={isAuth}>
-              <ContentDetailsPage />
-            </PrivateRoute>
-          }
-        />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
   );

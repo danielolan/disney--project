@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { MainLayout } from "../components/layouts/MainLayout";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
@@ -42,9 +42,9 @@ const ContentCategoryPage = () => {
                 <p className="mt-1"><strong>Author:</strong> {movie.autor}</p>
               </div>
               <div className="flex justify-center mt-4 mb-8">
-                <a href={"/details"}  rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <Link to={"/details"}  rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                   View More
-                </a>
+                </Link>
               </div>
             </div>
           ))
