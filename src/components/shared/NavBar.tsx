@@ -16,9 +16,7 @@ const NavBar = () => {
           <a href="/about" className="hover:bg-blue-700 px-3 py-2 rounded">
             About
           </a>
-          <a href="/services" className="hover:bg-blue-700 px-3 py-2 rounded">
-            Services
-          </a>
+         
           <a href="/contact" className="hover:bg-blue-700 px-3 py-2 rounded">
             Contact
           </a>

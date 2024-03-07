@@ -1,19 +1,87 @@
 [
     {
         "id": 1,
-        "name": "Mandalorian",
+        "name": "PIXAR",
         "thumbnail": "",
-        "movies": []
+        "movies": [
+            {
+                "id": "1",
+                "name": "Toy Story",
+                "subtitle": "Amistad más allá de la habitación",
+                "url": "https://www.disney.com/toy-story",
+                "description": "La historia de un grupo de juguetes que cobran vida cuando los humanos no están presentes, centrada en Woody y Buzz Lightyear.",
+                "duration": "81 min",
+                "age": "Todos los públicos",
+                "autor": "John Lasseter",
+                "slug": "toy-story"
+            },
+            {
+                "id": "2",
+                "name": "Buscando a Nemo",
+                "subtitle": "Una aventura oceánica inolvidable",
+                "url": "https://www.disney.com/buscando-a-nemo",
+                "description": "La emocionante travesía de Marlin, un pez payaso, para encontrar a su hijo Nemo.",
+                "duration": "100 min",
+                "age": "Todos los públicos",
+                "autor": "Andrew Stanton",
+                "slug": "buscando-a-nemo"
+            },
+            {
+                "id": "3",
+                "name": "WALL-E",
+                "subtitle": "Un pequeño robot con un gran corazón",
+                "url": "https://www.disney.com/wall-e",
+                "description": "WALL-E, un robot encargado de limpiar la Tierra abandonada, se embarca en un viaje que cambiará el destino de la humanidad.",
+                "duration": "98 min",
+                "age": "Todos los públicos",
+                "autor": "Andrew Stanton",
+                "slug": "wall-e"
+            },
+            {
+                "id": "4",
+                "name": "Intensa-Mente",
+                "subtitle": "Un viaje por las emociones humanas",
+                "url": "https://www.disney.com/intensa-mente",
+                "description": "La historia de Riley, una niña guiada por sus emociones - Alegría, Miedo, Ira, Asco y Tristeza - y cómo manejan su vida.",
+                "duration": "95 min",
+                "age": "Todos los públicos",
+                "autor": "Pete Docter",
+                "slug": "intensa-mente"
+            },
+            {
+                "id": "5",
+                "name": "Coco",
+                "subtitle": "Descubriendo la magia de la tradición",
+                "url": "https://www.disney.com/coco",
+                "description": "Miguel, un joven con sueños de convertirse en músico, se embarca en una extraordinaria aventura en la Tierra de los Muertos.",
+                "duration": "105 min",
+                "age": "Todos los públicos",
+                "autor": "Lee Unkrich",
+                "slug": "coco"
+            }
+        ]
     },
     {
         "id": 2,
-        "name": "IRON MAN",
+        "name": "DISNEY",
         "thumbnail": "",
         "movies": []
     },
     {
         "id": 3,
-        "name": "CATEGORIAS",
+        "name": "MARVEL ",
+        "humbnail": "",
+        "movies": []
+    },
+    {
+        "id": 2,
+        "name": "NATHIONAL GEOGRAPICH",
+        "thumbnail": "",
+        "movies": []
+    },
+    {
+        "id": 3,
+        "name": "STAR WARS",
         "humbnail": "",
         "movies": []
     }
