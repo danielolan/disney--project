@@ -4,11 +4,14 @@ import { PublicRoute } from "./PublicRoute";
 import Home from "../pages/HomePage";
 import { PrivateRoute } from "./PrivateRoute";
 import HomePage from "../pages/HomePage";
-import ContentDetailsPage from "../pages/ContentDetailsPage";
+
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
 import { useEffect, useState } from "react";
 import LoginPage from "../pages/LoginPage";
+import ContentCategoryPage from "../pages/ContentCategoryPage";
+import ContentDetailsPage from "../pages/ContentDetailsPage";
+
 
 
 
@@ -55,7 +58,7 @@ export const MainRouter = () => {
           path="/category/:categoryId"
           element={
             <PrivateRoute auth={isAuth}>
-              <ContentDetailsPage />
+              <ContentCategoryPage />
             </PrivateRoute>
           }
         />
