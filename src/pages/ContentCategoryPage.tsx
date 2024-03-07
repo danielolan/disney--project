@@ -37,10 +37,10 @@ const ContentCategoryPage = () => {
       <img className="w-[200px] mx-auto" src={category?.thumbnail} />
       <div className="flex justify-center">
         {" "}
-        {/* Asegúrate de que esto centra correctamente el contenido */}
+        
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 mx-auto">
           {" "}
-          {/* mx-auto para centrar la cuadrícula */}
+          
           {actualMovies.length > 0 ? (
             actualMovies.map((movie) => (
               <Link
