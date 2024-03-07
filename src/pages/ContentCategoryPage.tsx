@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { MainLayout } from "../components/layouts/MainLayout";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
@@ -30,23 +30,17 @@ const ContentCategoryPage = () => {
 
   return (
     <MainLayout>
-      <div className="container mx-auto px-4">
+      <h1 className="text-center text-4xl md:text-6xl font-bold tracking-wide my-8" style={{ fontFamily: 'Your Pixar-like font here' }}>PIXAR</h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {actualMovies.length > 0 ? (
           actualMovies.map((movie) => (
-            <div key={movie.id} className="bg-white shadow-xl rounded-lg overflow-hidden mb-4">
-              <img src={movie.url} alt={movie.name} className="w-full h-64 object-cover"/>
-              <div className="p-4">
-                <h2 className="text-2xl font-bold">{movie.name}</h2>
-                <p className="mt-1">{movie.description}</p>
-                <p className="mt-4"><strong>Duration:</strong> {movie.duration}</p>
-                <p className="mt-1"><strong>Author:</strong> {movie.autor}</p>
-              </div>
-              <div className="flex justify-center mt-4 mb-8">
-                <Link to={"/details"}  rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  View More
-                </Link>
-              </div>
-            </div>
+            <div key={movie.id} className="max-w-sm rounded overflow-hidden shadow-lg">
+          <img className="w-full" src={movie.url} alt={movie.name} />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">{movie.name}</div>
+          </div>
+        </div>
           ))
         ) : (
           <div className="text-center">No movies available</div>
