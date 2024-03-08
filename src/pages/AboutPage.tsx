@@ -1,4 +1,4 @@
-import React from "react";
+
 import { MainLayout } from "../components/layouts/MainLayout";
 import { FaReact, FaCloud, FaEnvelope, FaLinkedin, FaPhone } from "react-icons/fa";
 

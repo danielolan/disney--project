@@ -10,7 +10,7 @@ const ContentDetailsPage = () => {
     movieId: string;
     categoryId: string;
   }>();
-  const { categories, isError, isLoading } = useSelector(
+  const { categories } = useSelector(
     (state: RootState) => state.categories
   );
   const [movies, setMovie] = useState<Movies>();

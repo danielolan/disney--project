@@ -7,13 +7,13 @@ import { RootState } from "../store";
 import { setCategories } from "../store/reducers/categorySlice";
 import axios from "axios";
 import "react-slideshow-image/dist/styles.css";
-import { useNavigate } from "react-router-dom";
+
 import { MainLayout } from "../components/layouts/MainLayout";
 
 const HomePage = () => {
-  const navigate = useNavigate();
+  
   const dispatch = useDispatch();
-  const { categories, isError, isLoading } = useSelector(
+  const { categories } = useSelector(
     (state: RootState) => state.categories
   );
 
