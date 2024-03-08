@@ -59,9 +59,9 @@ Usuarios de Prueba
 La aplicación incluye varios usuarios de prueba para facilitar la evaluación y el testeo de las funcionalidades. Puedes utilizar estas credenciales para iniciar sesión y explorar las características de la aplicación:
 
 -Usuario 1:
-    Email: juan.perez@ejemplo.com
-    Contraseña: JuanPerez2024
+    Email: juan.perez@ejemplo.com.
+    Contraseña: JuanPerez2024.
 -Usuario 2:
-    Email: da-olano@hotmail.com
-    Contraseña: 123456
+    Email: da-olano@hotmail.com.
+    Contraseña: 123456.
 Por favor, ten en cuenta que estos usuarios son sólo para propósitos de prueba y su uso debería limitarse a entornos de desarrollo y testeo.
