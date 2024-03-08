@@ -1,30 +1,58 @@
-# React + TypeScript + Vite
+# Disney Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Índice
+- [Descripción](#descripción)
+- [Características](#características)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Contribuir](#contribuir)
+- [Licencia](#licencia)
+- [Contacto](#contacto)
 
-Currently, two official plugins are available:
+## Descripción
+Disney Project es una aplicación web dinámica y visualmente atractiva diseñada para ofrecer una experiencia interactiva al explorar el mundo de Disney. Este proyecto utiliza tecnologías de vanguardia para proporcionar una plataforma receptiva y accesible para usuarios interesados en descubrir y disfrutar de una amplia gama de contenidos relacionados con Disney.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
+- Navegación intuitiva a través de la barra de navegación.
+- Visualización de categorías con miniaturas y GIFs.
+- Carrusel de imágenes destacadas en la página de inicio.
+- Páginas específicas para detalles de contenido y categorías.
+- Autenticación de usuarios y personalización del perfil.
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
+- **Frontend**: React, Redux, TailwindCSS.
+- **Otros**: Axios, React Router.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Estructura del Proyecto
+src
+│ App.tsx
+│ index.css
+│ main.tsx
+│ vite-env.d.ts
+│ ...
+├───assets
+│ ├───img
+│ └───videos
+├───components
+│ ├───layouts
+│ └───shared
+├───hooks
+├───interfaces
+├───pages
+├───routes
+└───store
+└───reducers
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
+Para iniciar el proyecto localmente, sigue estos pasos:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+git clone [url-del-repositorio]
+cd disney-project
+npm install.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Uso
+Para ejecutar la aplicación en un entorno de desarrollo local:
+npm run dev / yarn dev 
