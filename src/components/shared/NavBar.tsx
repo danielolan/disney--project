@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from '../../store/index'; // Asegúrate de actualizar esta ruta
+import { RootState } from "../../store/index"; // Asegúrate de actualizar esta ruta
 import { logout } from "../../store/reducers/authSlice";
-
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const dispatch = useDispatch();
 
-  // Usando RootState para tipar el estado en useSelector
   const user = useSelector((state: RootState) => state.auth.user);
 
   const handleLogout = () => {
-    localStorage.removeItem('user');
+    localStorage.removeItem("user");
     dispatch(logout());
   };
 

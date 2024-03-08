@@ -12,6 +12,7 @@ import LoginPage from "../pages/LoginPage";
 import ContentCategoryPage from "../pages/ContentCategoryPage";
 import ContentDetailsPage from "../pages/ContentDetailsPage";
 import ContactPage from "../pages/ContactPage";
+import AboutPage from "../pages/AboutPage";
 
 export const MainRouter = () => {
   const { user } = useSelector((state: RootState) => state.auth);
@@ -58,6 +59,14 @@ export const MainRouter = () => {
           element={
             <PrivateRoute auth={isAuth}>
               <ContactPage />
+            </PrivateRoute>
+          }
+        />
+         <Route
+          path="/about"
+          element={
+            <PrivateRoute auth={isAuth}>
+              <AboutPage />
             </PrivateRoute>
           }
         />

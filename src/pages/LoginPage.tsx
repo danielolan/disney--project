@@ -9,11 +9,8 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  
   const dispatch = useDispatch();
-  const {  loginError } = useSelector(
-    (state: RootState) => state.auth
-  );
+  const { loginError } = useSelector((state: RootState) => state.auth);
 
   const backgroundStyle = {
     backgroundImage: `url("https://disney.images.edge.bamgrid.com/ripcut-delivery/v1/variant/disney/C9E09EB127322DE16A41800B80B9F1DF134E31F3C81C1F2DD34DE33690CA67F8/scale?format=webp&quality=90")`,
@@ -56,13 +53,13 @@ const LoginPage = () => {
         {loginError && <p className="text-red-500">{loginError}</p>}
         {error && <p className="text-red-500">{error}</p>}
         <form onSubmit={handleSubmit}>
-        <input
-  type="email"
-  placeholder="Correo electrónico"
-  className="border p-2 mb-4 w-full text-black"
-  value={email}
-  onChange={(e) => setEmail(e.target.value)}
-/>
+          <input
+            type="email"
+            placeholder="Correo electrónico"
+            className="border p-2 mb-4 w-full text-black"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
           <input
             type="password"

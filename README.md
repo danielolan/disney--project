@@ -64,7 +64,7 @@ Por favor, ten en cuenta que estos usuarios son sólo para propósitos de prueba
 
 Para cualquier consulta, sugerencia o soporte, por favor no dudes en contactarnos. Puedes hacerlo de las siguientes maneras:
 
-- **Email**: Envía tus preguntas o comentarios a [info@nuestroproyecto.com](da-olano@hotmail.com).
+- **Email**: Envía tus preguntas o comentarios a [da-olano@hotmail.com](da-olano@hotmail.com).
 - **Redes Sociales**: contacta a través de nuestras redes sociales:
   - [Linkedin](https://www.linkedin.com/in/daniel-andres-olano-081035292/)
 - **Teléfono**: Para asistencia inmediata, llámame al +57 3219702802. .

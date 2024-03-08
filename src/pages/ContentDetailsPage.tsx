@@ -5,8 +5,13 @@ import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 
 const ContentDetailsPage = () => {
-  const { movieId, categoryId } = useParams<{ movieId: string; categoryId: string; }>();
-  const { categories, isError, isLoading } = useSelector((state: RootState) => state.categories);
+  const { movieId, categoryId } = useParams<{
+    movieId: string;
+    categoryId: string;
+  }>();
+  const { categories, isError, isLoading } = useSelector(
+    (state: RootState) => state.categories
+  );
   const [movies, setMovie] = useState(null);
 
   useEffect(() => {
@@ -40,7 +45,6 @@ const ContentDetailsPage = () => {
                 <span>Edad: {movies.age}</span> |{" "}
                 <span>Autor: {movies.autor}</span>
               </div>
-             
             </div>
           </div>
         ) : (
