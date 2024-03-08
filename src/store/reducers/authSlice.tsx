@@ -16,12 +16,20 @@ const initialState: AuthState = {
   loginError: null,
 };
 
-export const mockUser = {
-  email: "da-olano@hotmail.com",
-  name: "Daniel",
-  id: "84h2uy4n43",
-  password: "123456",
-};
+export const mockUser = [
+  {
+    email: "juan.perez@ejemplo.com",
+    name: "Juan Perez",
+    id: "84h2uy4n43",
+    password: "JuanPerez2024",
+  },
+  {
+    email: "da-olano@hotmail.com",
+    name: "Daniel",
+    id: "ml67890",
+    password: "123456",
+  }
+];
 
 const authSlice = createSlice({
   name: "auth",
@@ -29,11 +37,13 @@ const authSlice = createSlice({
   reducers: {
     login(state, action: PayloadAction<UserForm>) {
       //WARNING!!  =>  MOCK USER, It should be validate ON SERVER //WARNING!!!
-      const isValidUser =
-        action.payload.email == mockUser.email &&
-        action.payload.password == mockUser.password;
-      if (isValidUser) {
-        state.user = mockUser;
+      const foundUser = mockUser.find(user =>
+        user.email === action.payload.email &&
+        user.password === action.payload.password
+      );
+
+      if (foundUser) {
+        state.user = foundUser;
         state.isLoggedIn = true;
       } else {
         state.isLoggedIn = false;

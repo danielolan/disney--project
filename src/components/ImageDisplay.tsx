@@ -28,9 +28,7 @@ const ImageDisplay = () => {
           >
             <img
               src={slideImage.url}
-              className="h-[310px] object-cover
-        object-center rounded-md hover:border-[4px]
-        border-gray-400 transition-all duration-100 ease-in"
+              className="w-full max-w-full object-cover object-center rounded-md hover:border-[4px] border-gray-400 transition-all duration-100 ease-in"
               alt={slideImage.caption}
             />
           </div>
