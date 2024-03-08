@@ -23,32 +23,23 @@ Disney Project es una aplicación web dinámica y visualmente atractiva diseñad
 - **Frontend**: React, Redux, TailwindCSS.
 - **Otros**: Axios, React Router.
 
-## Estructura del Proyecto
-src
-│ App.tsx
-│ index.css
-│ main.tsx
-│ vite-env.d.ts
-│ ...
-├───assets
-│ ├───img
-│ └───videos
-├───components
-│ ├───layouts
-│ └───shared
-├───hooks
-├───interfaces
-├───pages
-├───routes
-└───store
-└───reducers
+
 
 ## Instalación
+
 Para iniciar el proyecto localmente, sigue estos pasos:
 
-git clone https://github.com/danielolan/disney--project.git
-cd disney-project
-npm install.  /  yarn i
+1. Clonar el repositorio: `git clone https://github.com/danielolan/disney--project.git`
+2. Cambiar al directorio del proyecto: `cd disney-project`
+3. Instalar dependencias:
+- Con npm:
+  ```
+  npm install
+  ```
+- Con yarn:
+  ```
+  yarn i
+  ```
 
 
 ## Uso
