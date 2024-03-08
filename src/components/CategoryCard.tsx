@@ -29,7 +29,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ thumbnail, to, gifs }) => {
           className="absolute z-0  top-0 rounded-md 
               opacity-0 hover:opacity-70"
         />
-        <img className="w-[200px]" src={thumbnail} />
+        <img className="w-[200px] " src={thumbnail} />
       </div>
     </Link>
   );
