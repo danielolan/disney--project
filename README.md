@@ -4,7 +4,6 @@
 - [Descripción](#descripción)
 - [Características](#características)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Estructura del Proyecto](#estructura-del-proyecto)
 - [Instalación](#instalación)
 - [Uso](#uso)
 - [Contacto](#contacto)
@@ -60,4 +59,16 @@ La aplicación incluye varios usuarios de prueba para facilitar la evaluación y
   - Contraseña: `123456`
 
 Por favor, ten en cuenta que estos usuarios son sólo para propósitos de prueba y su uso debería limitarse a entornos de desarrollo y testeo.
+
+## Contacto
+
+Para cualquier consulta, sugerencia o soporte, por favor no dudes en contactarnos. Puedes hacerlo de las siguientes maneras:
+
+- **Email**: Envía tus preguntas o comentarios a [info@nuestroproyecto.com](da-olano@hotmail.com).
+- **Redes Sociales**: contacta a través de nuestras redes sociales:
+  - [Linkedin](https://www.linkedin.com/in/daniel-andres-olano-081035292/)
+- **Teléfono**: Para asistencia inmediata, llámame al +57 3219702802. .
+
+Estamos siempre dispuestos a ayudarte y mejorar tu experiencia con nuestro proyecto.
+
 
