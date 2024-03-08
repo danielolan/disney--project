@@ -56,23 +56,24 @@ const LoginPage = () => {
         {loginError && <p className="text-red-500">{loginError}</p>}
         {error && <p className="text-red-500">{error}</p>}
         <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            placeholder="Correo electrónico"
-            className="border p-2 mb-4 w-full"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+        <input
+  type="email"
+  placeholder="Correo electrónico"
+  className="border p-2 mb-4 w-full text-black"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+/>
+
           <input
             type="password"
             placeholder="Ingresa tu contraseña"
-            className="border p-2 mb-4 w-full"
+            className="border p-2 mb-4 w-full text-black "
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl w-full"
           >
             Continuar
           </button>

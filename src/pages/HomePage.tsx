@@ -37,6 +37,7 @@ const HomePage = () => {
         {categories?.map((category, i) => (
           <CategoryCard
             thumbnail={category.thumbnail}
+            gifs={category.gifs}
             to={`/category/${category.id}`}
             key={i}
           />
