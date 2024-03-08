@@ -72,27 +72,271 @@
         "name": "DISNEY",
         "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=400&aspectRatio=1.78&format=png",
         "gifs": "/src/assets/Videos/disney.mp4",
-        "movies": []
+        "movies": [
+            {
+                "id": "1",
+                "name": "El Rey León",
+                "subtitle": "La aventura de Simba",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/72DBE2549138B1D8B27B7F839E33F42703EBD9C0D443BF0A17811C9340B76B0C/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/lFzVJEksoDY?si=simbaAdventure",
+                "description": "La emocionante odisea de Simba para convertirse en rey de la sabana africana.",
+                "duration": "88 min",
+                "age": "Todos los públicos",
+                "autor": "Roger Allers y Rob Minkoff",
+                "slug": "el-rey-leon"
+            },
+            {
+                "id": "2",
+                "name": "Frozen",
+                "subtitle": "El reino del hielo",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/782AC5B3DE3E8A0964340621B2B24B8A32288E61DE438699A6DBC43036A92782/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/TbQm5doF_Uc?si=frozenKingdom",
+                "description": "La historia de dos hermanas, Elsa y Anna, y su viaje épico en un reino congelado.",
+                "duration": "102 min",
+                "age": "Todos los públicos",
+                "autor": "Chris Buck y Jennifer Lee",
+                "slug": "frozen"
+            },
+            {
+                "id": "3",
+                "name": "La Bella y la Bestia",
+                "subtitle": "Un amor inesperado",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/476C100F81EA339CA767E88DDC6A51F846F72F8608D75578C271CBB54DD3C009/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/tRlzmyveDHE?si=beautyBeastLove",
+                "description": "La encantadora historia de amor entre Bella y una bestia en un misterioso castillo.",
+                "duration": "84 min",
+                "age": "Todos los públicos",
+                "autor": "Gary Trousdale y Kirk Wise",
+                "slug": "la-bella-y-la-bestia"
+            },
+            {
+                "id": "4",
+                "name": "Aladdín",
+                "subtitle": "Un mundo ideal",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0F23999D0D0EC6221938C66E59239189AA1CB82F386F347469D5820D473F6D4C/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/eTjHiQKJUDY?si=aladdinAdventure",
+                "description": "La emocionante aventura de Aladdín, su lámpara mágica y la princesa Jasmín.",
+                "duration": "90 min",
+                "age": "Todos los públicos",
+                "autor": "Ron Clements y John Musker",
+                "slug": "aladdin"
+            },
+            {
+                "id": "5",
+                "name": "Moana",
+                "subtitle": "Un mar de aventuras",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EFCEE1C61D9AD1E82A6EA1FAD2E3B7DCF027A48C5D5FEE3D9E22871AF9FD21B2/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/LKFuXETZUsI?si=moanaOcean",
+                "description": "La historia de Moana, una valiente joven que navega en un audaz viaje para salvar a su pueblo.",
+                "duration": "107 min",
+                "age": "Todos los públicos",
+                "autor": "Ron Clements y John Musker",
+                "slug": "moana"
+            }
+        ]
     },
     {
         "id": 3,
         "name": "MARVEL ",
         "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C90088DCAB7EA558159C0A79E4839D46B5302B5521BAB1F76D2E807D9E2C6D9A/scale?width=400&aspectRatio=1.78&format=png",
         "gifs": "/src/assets/Videos/marvel.mp4",
-        "movies": []
+        "movies": [
+            {
+                "id": "1",
+                "name": "Iron Man",
+                "subtitle": "El nacimiento de un héroe",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/80C64C0B63382CD3ED2653356125F275F63D036028A77D38DC3286AD851A6833/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/8hYlB38asDY?si=ironManHero",
+                "description": "Tony Stark se convierte en Iron Man para combatir el mal como un industrial de día y un superhéroe de noche.",
+                "duration": "126 min",
+                "age": "Mayores de 12 años",
+                "autor": "Jon Favreau",
+                "slug": "iron-man"
+            },
+            {
+                "id": "2",
+                "name": "Los Vengadores",
+                "subtitle": "Unidos para salvar el mundo",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1B198B2046A7A40129694795EDD68088730AC9273D6AFAB345D71A38B52893A6/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/eOrNdBpGMv8?si=avengersAssemble",
+                "description": "Los héroes más poderosos de la Tierra deben unirse para luchar contra una amenaza global.",
+                "duration": "143 min",
+                "age": "Mayores de 12 años",
+                "autor": "Joss Whedon",
+                "slug": "los-vengadores"
+            },
+            {
+                "id": "3",
+                "name": "Black Panther",
+                "subtitle": "El rey de Wakanda",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E4475104C984F5D9F6E97DC692DB0FAD25980507FE06A7B4550371096397E4A5/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/xjDjIWPwcPU?si=blackPantherKing",
+                "description": "T'Challa regresa a Wakanda para asumir su lugar como rey, pero se enfrenta a desafíos inesperados.",
+                "duration": "134 min",
+                "age": "Mayores de 12 años",
+                "autor": "Ryan Coogler",
+                "slug": "black-panther"
+            },
+            {
+                "id": "4",
+                "name": "Thor: Ragnarok",
+                "subtitle": "Un viaje cósmico",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/32E303CF7716B53DEAF7874615A17C0EAB062AD76DDD8681EF860B8844A119A5/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/ue80QwXMRHg?si=thorRagnarok",
+                "description": "Thor debe escapar del otro lado del universo a tiempo para salvar Asgard del Ragnarok.",
+                "duration": "130 min",
+                "age": "Mayores de 12 años",
+                "autor": "Taika Waititi",
+                "slug": "thor-ragnarok"
+            },
+            {
+                "id": "5",
+                "name": "Doctor Strange",
+                "subtitle": "El hechicero supremo",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A2201A74FD615B5C293A42855607F82D355CF09203792C28BBFE441137C3E2A/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/HSzx-zryEgM?si=doctorStrangeMagic",
+                "description": "Tras un accidente, el cirujano Stephen Strange descubre un mundo oculto de magia y dimensiones alternas.",
+                "duration": "115 min",
+                "age": "Mayores de 12 años",
+                "autor": "Scott Derrickson",
+                "slug": "doctor-strange"
+            }
+        ]
     },
     {
         "id": 4,
         "name": "NATHIONAL GEOGRAPICH",
         "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2EF24AA0A1E648E6D1A3B26491F516632137ED87AB22969D153316F8BD670FB5/scale?width=400&aspectRatio=1.78&format=png",
         "gifs": "/src/assets/Videos/national-geographic.mp4",
-        "movies": []
+        "movies": [
+            {
+                "id": "1",
+                "name": "Free Solo",
+                "subtitle": "La escalada sin límites",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5AB719788ED2168CFC98C01E337FD04B42453E9D859677F04B81C62B91C26FAB/scale?width=800&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/urRVZ4SW7WU?si=freeSoloClimb",
+                "description": "La impresionante y vertiginosa historia de Alex Honnold en su intento de escalar El Capitán sin cuerdas de seguridad.",
+                "duration": "100 min",
+                "age": "Mayores de 12 años",
+                "autor": "Jimmy Chin y Elizabeth Chai Vasarhelyi",
+                "slug": "free-solo"
+            },
+            {
+                "id": "2",
+                "name": "The Last Ice",
+                "subtitle": "La lucha por el Ártico",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7A14AB24F440AB5A9DF7F4B17F804E3A741BC1F59DA7D0BC2167A71D390F269/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/qpZdevJEA7I?si=cIFYLosRtRdJLrv0",
+                "description": "Explora las comunidades Inuit en el Ártico y su lucha por preservar su modo de vida ante el cambio climático.",
+                "duration": "83 min",
+                "age": "Mayores de 12 años",
+                "autor": "Scott Ressler",
+                "slug": "the-last-ice"
+            },
+            {
+                "id": "3",
+                "name": "Jane",
+                "subtitle": "La historia de Jane Goodall",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/63DAE601C579452FF43DD92FE014CE7D384A466E33C59B6658162710D6970149/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/FRlUJrEUn0Y?si=V1-zT3bEALg3M90N",
+                "description": "Un retrato íntimo de Jane Goodall y su revolucionaria investigación de los chimpancés.",
+                "duration": "90 min",
+                "age": "Todos los públicos",
+                "autor": "Brett Morgen",
+                "slug": "jane"
+            },
+            {
+                "id": "4",
+                "name": "Secrets of the Whales",
+                "subtitle": "Los misterios del océano",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1DCB15EFE39E9904E3EA4782F750613EB9C70438B3697C4B8FEC47E497ABD764/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal",
+                "video": "https://www.youtube.com/embed/xOySOlB78dM?si=l9wKSTcDKzQo6IpH",
+                "description": "Una exploración profunda en la vida de las ballenas, revelando su comunicación y estructura social.",
+                "duration": "120 min",
+                "age": "Todos los públicos",
+                "autor": "Brian Skerry y James Cameron",
+                "slug": "secrets-of-the-whales"
+            },
+            {
+                "id": "5",
+                "name": "Before the Flood",
+                "subtitle": "Un planeta en peligro",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C3DBCF0B63355C6F307C18D3B574CA020BD11961A4094DB01D07FAD8C9A95DE/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/D9xFFyUOpXo?si=-35oTBXvFvcpR7Hp",
+                "description": "Leonardo DiCaprio explora los efectos devastadores del cambio climático alrededor del mundo y busca soluciones.",
+                "duration": "96 min",
+                "age": "Mayores de 12 años",
+                "autor": "Fisher Stevens",
+                "slug": "before-the-flood"
+            }
+        ]
     },
     {
         "id": 5,
         "name": "STAR WARS",
         "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A9416D67DC9595496B2666087596EE64DE379272051BB854157C0D938BE2C26/scale?width=400&aspectRatio=1.78&format=png",
         "gifs": "/src/assets/Videos/star-wars.mp4",
-        "movies": []
+        "movies": [
+            {
+                "id": "1",
+                "name": "Star Wars: Episodio IV - Una Nueva Esperanza",
+                "subtitle": "El inicio de la saga",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/BAD01A10584651335154E48FEA41B3C64C727BE634A194ADC9802B23BE7A43DF/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/1g3_CFmnU7k?si=newHope",
+                "description": "La primera película de la saga, donde Luke Skywalker se une a la Alianza Rebelde para derrotar al Imperio.",
+                "duration": "121 min",
+                "age": "Mayores de 7 años",
+                "autor": "George Lucas",
+                "slug": "una-nueva-esperanza"
+            },
+            {
+                "id": "2",
+                "name": "Star Wars: Episodio V - El Imperio Contraataca",
+                "subtitle": "La lucha continúa",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36D8E2C1A76DABC85A2FD5E5F6EBF8B07295588EAA53E5BD03178DDBF8120A67/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/mz_YWNhKOkM?si=empireStrikes",
+                "description": "En esta secuela, las fuerzas imperiales persiguen a los rebeldes mientras Luke se entrena con el Maestro Yoda.",
+                "duration": "124 min",
+                "age": "Mayores de 7 años",
+                "autor": "Irvin Kershner",
+                "slug": "el-imperio-contraataca"
+            },
+            {
+                "id": "3",
+                "name": "Star Wars: Episodio VI - El Retorno del Jedi",
+                "subtitle": "El final de la trilogía original",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EE09EE95FDAA94D30E173269D2A837CD6E55E9DA5B7B65857323E8E8505D57AB/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/5UfA_aKBGMc?si=returnJedi",
+                "description": "La Alianza Rebelde lanza una batalla final contra el Imperio mientras Luke enfrenta a Darth Vader y al Emperador.",
+                "duration": "131 min",
+                "age": "Mayores de 7 años",
+                "autor": "Richard Marquand",
+                "slug": "el-retorno-del-jedi"
+            },
+            {
+                "id": "4",
+                "name": "Star Wars: Episodio VII - El Despertar de la Fuerza",
+                "subtitle": "Una nueva generación",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/420939040964699EFC04080488234D5973214263ADDDA65FD20AB24D4B541DB6/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/sGbxmsDFVnE?si=forceAwakens",
+                "description": "Una nueva amenaza surge en la forma de la Primera Orden, mientras Rey y Finn se unen a la lucha.",
+                "duration": "138 min",
+                "age": "Mayores de 7 años",
+                "autor": "J.J. Abrams",
+                "slug": "el-despertar-de-la-fuerza"
+            },
+            {
+                "id": "5",
+                "name": "Star Wars: Episodio VIII - Los Últimos Jedi",
+                "subtitle": "El legado continúa",
+                "url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B2C396B952F25880970F28C07A13E4128BF1841FEDEB53EDEDB1218F4B79382F/scale?width=400&aspectRatio=1.78&format=jpeg",
+                "video": "https://www.youtube.com/embed/Q0CbN8sfihY?si=lastJedi",
+                "description": "Rey busca la guía de Luke Skywalker mientras la Resistencia se enfrenta a la Primera Orden.",
+                "duration": "152 min",
+                "age": "Mayores de 7 años",
+                "autor": "Rian Johnson",
+                "slug": "los-ultimos-jedi"
+            }
+        ]
     }
 ]
