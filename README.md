@@ -7,8 +7,6 @@
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Instalación](#instalación)
 - [Uso](#uso)
-- [Contribuir](#contribuir)
-- [Licencia](#licencia)
 - [Contacto](#contacto)
 
 ## Descripción
@@ -48,11 +46,22 @@ src
 ## Instalación
 Para iniciar el proyecto localmente, sigue estos pasos:
 
-git clone [url-del-repositorio]
+git clone https://github.com/danielolan/disney--project.git
 cd disney-project
-npm install.
+npm install.  /  yarn i
 
 
 ## Uso
 Para ejecutar la aplicación en un entorno de desarrollo local:
 npm run dev / yarn dev 
+
+Usuarios de Prueba
+La aplicación incluye varios usuarios de prueba para facilitar la evaluación y el testeo de las funcionalidades. Puedes utilizar estas credenciales para iniciar sesión y explorar las características de la aplicación:
+
+-Usuario 1:
+    Email: juan.perez@ejemplo.com
+    Contraseña: JuanPerez2024
+-Usuario 2:
+    Email: da-olano@hotmail.com
+    Contraseña: 123456
+Por favor, ten en cuenta que estos usuarios son sólo para propósitos de prueba y su uso debería limitarse a entornos de desarrollo y testeo.
