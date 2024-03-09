@@ -18,7 +18,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ thumbnail, to, gifs }) => {
       <div
         className="rounded-lg hover:scale-110 transition-all duration-300
             ease-in-out cursor-pointer relative shadow-xl 
-            shadow-gray-800 bg-slate-500"
+            bg-blue-900"
       >
         <video
           src={gifs}
@@ -27,7 +27,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ thumbnail, to, gifs }) => {
           playsInline
           muted
           className="absolute z-0  top-0 rounded-md 
-              opacity-0 hover:opacity-70"
+              opacity-0 hover:opacity-80 bg-transparent"
         />
         <img className="w-[200px] " src={thumbnail} />
       </div>

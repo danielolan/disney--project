@@ -31,7 +31,7 @@ const ContentDetailsPage = () => {
         {movies ? (
           <div className="flex flex-col items-center px-4 py-10">
             <h1 className="text-6xl font-bold my-4">{movies.name}</h1>
-            
+
             <iframe
               className="w-full md:w-3/4 aspect-video mb-4"
               src={movies.video}
@@ -43,36 +43,37 @@ const ContentDetailsPage = () => {
               <div className="flex justify-between items-center mb-4">
                 <div>
                   <h2 className="text-3xl font-bold">{movies.name}</h2>
-                  <h2 className="text-xl font-semibold mb-2">{movies.subtitle}</h2>
-                  <p className="text-xl mb-2">| {movies.age} |</p>
+                  <p className="text-xl mb-2">{movies.subtitle}</p>
+                  <p className="text-xl mb-2">| {movies.slug} |</p>
                 </div>
                 <div>
                   <img
                     className="w-32 h-auto"
-                    src="path_to_movie_image"
-                    alt=""
+                    src={movies.url}
+                    alt="Notorious B.I.G movie poster"
                   />
                 </div>
               </div>
 
               <div className="mb-4">
-                <h3 className="text-xl font-semibold mb-2">Descripcion</h3>
+                <h3 className="text-xl font-semibold mb-2">Descripción</h3>
                 <p className="text-lg my-8">
-                {movies.description}
+                  {movies.description}
                 </p>
 
                 <div className="text-sm">
-                  <span className="font-semibold text-2xl my-8 ">Duración:</span><br />
+                  <span className="font-semibold text-2xl my-8">Duración:</span><br />
                   <span className="text-xl">{movies.duration}</span><br />
-                  <span className="font-semibold text-2xl my-8">Edad:</span><br />
+                  <span className="font-semibold text-2xl my-8">Tipo:</span><br />
                   <span className="text-xl">{movies.age}</span><br />
                   <span className="font-semibold text-2xl my-8">Director:</span><br />
                   <span className="text-xl">{movies.autor}</span><br />
-                  <span className="font-semibold text-2xl my-8">Guionista:</span><br />
-                  <span className="text-xl">{movies.slug}</span>
+                  
+                  
                 </div>
               </div>
             </div>
+
           </div>
         ) : (
           <div className="text-center py-10">Película no encontrada</div>
