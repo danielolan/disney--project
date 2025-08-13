@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../store/index"; // Asegúrate de actualizar esta ruta
 import { logout } from "../../store/reducers/authSlice";
-
+import disneylogo from "../../assets/img/disneyLogo.svg";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const NavBar = () => {
       <div className="flex justify-between items-center sm:flex-row flex-col">
         <Link className="text-lg font-semibold p-2" to="/">
           <img
-            src={"./../../public/images/disneyLogo.svg"}
+            src={disneylogo}
             className="w-[72px]"
             alt="Logo Main"
           />

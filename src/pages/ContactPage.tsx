@@ -1,6 +1,6 @@
 
 import { MainLayout } from "../components/layouts/MainLayout";
-
+import devImage from "../assets/img/perfil.svg";
 const ContactPage = () => {
   return (
     <MainLayout>
@@ -14,7 +14,7 @@ const ContactPage = () => {
         <div className="max-w-lg w-full bg-gray-800 p-8 rounded-lg shadow-xl">
           <div className="flex flex-col items-center mb-4">
             <img
-              src="/public/images/perfil.svg"
+              src={devImage}
               alt="DANIEL OLANO"
               className="w-32 h-32 rounded-full border-2 border-gray-300 mb-3"
             />
