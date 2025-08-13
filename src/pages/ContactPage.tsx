@@ -1,13 +1,17 @@
 
 import { MainLayout } from "../components/layouts/MainLayout";
 import devImage from "../assets/img/perfil.svg";
+import disneyLogo from "../assets/img/disneyLogo.svg";
+import EmailIcon from "../assets/img/email.svg";
+import LinkedInIcon from "../assets/img/icons8-linkedin.svg";
+import PhoneIcon from "../assets/img/phone.svg";
 const ContactPage = () => {
   return (
     <MainLayout>
       <div className="pt-12 pb-6">
         <img
           className="w-[200px] mx-auto"
-          src="./../../public/images/disneyLogo.svg"
+          src={disneyLogo}
         />
       </div>
       <div className="text-white flex flex-col items-center">
@@ -22,7 +26,7 @@ const ContactPage = () => {
           </div>
           <div className="text-lg mb-2 flex items-center">
             <img
-              src="/public/images/email.svg"
+              src={EmailIcon}
               alt="Email Icon"
               className="w-6 h-6 mr-2"
             />
@@ -30,7 +34,7 @@ const ContactPage = () => {
           </div>
           <div className="text-lg mb-2 flex items-center">
             <img
-              src="/public/images/icons8-linkedin.svg"
+              src={LinkedInIcon}
               alt="LinkedIn Icon"
               className="w-6 h-6 mr-2"
             />
@@ -43,7 +47,7 @@ const ContactPage = () => {
           </div>
           <div className="text-lg flex items-center">
             <img
-              src="/public/images/phone.svg"
+              src={PhoneIcon}
               alt="Phone Icon"
               className="w-6 h-6 mr-2 text-blue-500"
             />

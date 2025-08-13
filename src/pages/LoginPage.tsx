@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { RootState } from "../store";
 import { login, mockUser, resetLogin } from "../store/reducers/authSlice";
-
+import disneyLogo from "../assets/img/disneyLogo.svg";
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -38,7 +38,7 @@ const LoginPage = () => {
       style={backgroundStyle}
     >
       <img
-        src={"./../../public/images/disneyLogo.svg"}
+        src={disneyLogo}
         className="w-[72px] mb-9"
         alt="Logo Main"
       />
