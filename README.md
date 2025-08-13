@@ -2,8 +2,6 @@
 
 # Usuarios de Prueba  (IMPORTANTE LEER ESTA PARTE)
 
-
-
 La aplicación incluye varios usuarios de prueba para facilitar la evaluación y el testeo de las funcionalidades. Puedes utilizar estas credenciales para iniciar sesión y explorar las características de la aplicación:
 
 - **Usuario 1:**
