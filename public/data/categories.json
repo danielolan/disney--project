@@ -3,7 +3,7 @@
         "id": 1,
         "name": "PIXAR",
         "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7F4E1A299763030A0A8527227AD2812C049CE3E02822F7EDEFCFA1CFB703DDA5/scale?width=400&aspectRatio=1.78&format=png",
-        "gifs": "/src/assets/Videos/pixar.mp4",
+        "gifs": "@/../assets/Videos/pixar.mp4",
         "movies": [
             {
                 "id": "1",
@@ -71,7 +71,7 @@
         "id": 2,
         "name": "DISNEY",
         "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=400&aspectRatio=1.78&format=png",
-        "gifs": "/src/assets/Videos/disney.mp4",
+        "gifs": "@/../assets/Videos/disney.mp4",
         "movies": [
             {
                 "id": "1",
@@ -139,7 +139,7 @@
         "id": 3,
         "name": "MARVEL ",
         "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C90088DCAB7EA558159C0A79E4839D46B5302B5521BAB1F76D2E807D9E2C6D9A/scale?width=400&aspectRatio=1.78&format=png",
-        "gifs": "/src/assets/Videos/marvel.mp4",
+        "gifs": "@/../assets/Videos/marvel.mp4",
         "movies": [
             {
                 "id": "1",
@@ -207,7 +207,7 @@
         "id": 4,
         "name": "NATHIONAL GEOGRAPICH",
         "thumbnail": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2EF24AA0A1E648E6D1A3B26491F516632137ED87AB22969D153316F8BD670FB5/scale?width=400&aspectRatio=1.78&format=png",
-        "gifs": "/src/assets/Videos/national-geographic.mp4",
+        "gifs": "@/../assets/Videos/nathional-geographic.mp4",
         "movies": [
             {
                 "id": "1",
